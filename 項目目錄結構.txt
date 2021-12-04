@@ -1,0 +1,52 @@
+project
+└───src
+│   │   app.vue    // 主頁面
+│   │   main.js    // 主入口
+|   |   router.js  // 所有路由
+│   │
+│   |____assets                    // css、image、svg 等資源
+│   |   |____css                   // 所有 sass 資源
+|   |   |    |  reset.scss         // 兼容各瀏覽器
+|   |   |    |  global.scss        // 全局 css
+|   |   |    |  variable.scss      // sass 變量和 function 等
+│   |   |____img                   // image 圖標庫
+|   |   |____svg                   // svg 圖標庫
+|   |
+|   |____components                // 組件
+│   |   |____common                // common自註冊組件
+│   |        |____base             // 基礎組件(如果是引入第三方，該文件夾可省略)
+│   |        |   ...               // 業務公用組件
+│   |   |____article               // article頁面組件
+│   |   |____about                 // about頁面組件
+|   |
+|   |____pages                     // UI層（原則：輕 page，重 component）
+|   |   |____article
+|   |   |    |  list.vue           // 列表頁
+|   |   |    |  create.vue         // 新增頁
+|   |   |    |  edit.vue           // 修改頁
+|   |   | main.vue
+|   |
+|   |____plugins                   // 自己或第三方插件
+|   |   | index.js                 // 插件入口文件
+|   |   | directives.js            // 所有 Vue 指令
+|   |   | filters.js               // 所有 Vue 過濾
+|   |
+|   |____server                    // 接口層
+|   |   | index.js                 // 所有接口
+|   |   | http.js                  // axios 二次封裝
+|   |
+|   |____store                     // vuex數據
+|   |   | index.js
+|   |
+|   |____utils                     // 工具層
+|   |   | config.js                // 配置文件，包括常量配置
+|
+└───public                         // 公用文件，不經過webpack處理
+│   │   favicon.ico
+│   │   index.html
+│   vue.config.js                  // vue-cli3 主配置
+│   babel.config.js                // babel 配置
+│   .tslint.json                   // tslint 配置
+│   .prettierrc.js                 // perttier 配置
+│   package.json                   // npm | yarn 配置
+│   README.md                      // 項目說明

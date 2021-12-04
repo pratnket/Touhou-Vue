@@ -1,0 +1,2 @@
+快速產生資料夾樹狀結構
+tree.com > ouput.txt
